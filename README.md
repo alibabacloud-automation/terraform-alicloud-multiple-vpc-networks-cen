@@ -114,12 +114,13 @@ module "complete" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
+| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.200.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | n/a |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.200.0 |
 
 ## Modules
 
@@ -135,23 +136,23 @@ module "complete" {
 
 | Name | Type |
 |------|------|
-| [alicloud_cen_instance.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_instance) | resource |
-| [alicloud_cen_transit_router.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router) | resource |
-| [alicloud_cen_transit_router_route_entry.dev_block_prod](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
-| [alicloud_cen_transit_router_route_entry.dev_to_dmz](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
-| [alicloud_cen_transit_router_route_entry.dev_vpc_all](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
-| [alicloud_cen_transit_router_route_entry.dmz_to_dev](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
-| [alicloud_cen_transit_router_route_entry.dmz_to_prod](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
-| [alicloud_cen_transit_router_route_entry.prod_block_dev](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
-| [alicloud_cen_transit_router_route_entry.prod_to_dmz](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
-| [alicloud_cen_transit_router_route_entry.prod_vpc_all](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
-| [alicloud_cen_transit_router_route_table.dev](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table) | resource |
-| [alicloud_cen_transit_router_route_table.dmz](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table) | resource |
-| [alicloud_cen_transit_router_route_table.prod](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table) | resource |
-| [alicloud_cen_transit_router_route_table_association.dev_all](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
-| [alicloud_cen_transit_router_route_table_association.dmz](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
-| [alicloud_cen_transit_router_route_table_association.prod](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
-| [alicloud_regions.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/data-sources/regions) | data source |
+| [alicloud_cen_instance.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_instance) | resource |
+| [alicloud_cen_transit_router.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router) | resource |
+| [alicloud_cen_transit_router_route_entry.dev_block_prod](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
+| [alicloud_cen_transit_router_route_entry.dev_to_dmz](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
+| [alicloud_cen_transit_router_route_entry.dev_vpc_all](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
+| [alicloud_cen_transit_router_route_entry.dmz_to_dev](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
+| [alicloud_cen_transit_router_route_entry.dmz_to_prod](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
+| [alicloud_cen_transit_router_route_entry.prod_block_dev](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
+| [alicloud_cen_transit_router_route_entry.prod_to_dmz](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
+| [alicloud_cen_transit_router_route_entry.prod_vpc_all](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_entry) | resource |
+| [alicloud_cen_transit_router_route_table.dev](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table) | resource |
+| [alicloud_cen_transit_router_route_table.dmz](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table) | resource |
+| [alicloud_cen_transit_router_route_table.prod](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table) | resource |
+| [alicloud_cen_transit_router_route_table_association.dev_all](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
+| [alicloud_cen_transit_router_route_table_association.dmz](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
+| [alicloud_cen_transit_router_route_table_association.prod](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
+| [alicloud_regions.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/data-sources/regions) | data source |
 
 ## Inputs
 
@@ -161,7 +162,7 @@ module "complete" {
 | <a name="input_resource_group_id"></a> [resource\_group\_id](#input\_resource\_group\_id) | The ID of the resource group. | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | The tags of the resource. | `any` | `null` | no |
 | <a name="input_transit_router_name"></a> [transit\_router\_name](#input\_transit\_router\_name) | The name of cen transit router. | `string` | `"transit_router_DMZ"` | no |
-| <a name="input_vpcs"></a> [vpcs](#input\_vpcs) | The parameters of VPCs. | <pre>object({<br>    dmz = object({<br>      cidr_block = string<br>      vswitches = list(object({<br>        subnet  = string<br>        zone_id = string<br>      }))<br>    })<br>    prod = list(object({<br>      cidr_block = string<br>      vswitches = list(object({<br>        subnet  = string<br>        zone_id = string<br>      }))<br>    }))<br>    dev = list(object({<br>      cidr_block = string<br>      vswitches = list(object({<br>        subnet  = string<br>        zone_id = string<br>      }))<br>    }))<br>    prod_inner = optional(list(object({<br>      cidr_block = string<br>      vswitches = list(object({<br>        subnet  = string<br>        zone_id = string<br>      }))<br>    })), [])<br>    dev_inner = optional(list(object({<br>      cidr_block = string<br>      vswitches = list(object({<br>        subnet  = string<br>        zone_id = string<br>      }))<br>    })), [])<br>  })</pre> | <pre>{<br>  "dev": [],<br>  "dmz": {<br>    "cidr_block": null,<br>    "vswitches": []<br>  },<br>  "prod": []<br>}</pre> | no |
+| <a name="input_vpcs"></a> [vpcs](#input\_vpcs) | The parameters of VPCs. | <pre>object({<br/>    dmz = object({<br/>      cidr_block = string<br/>      vswitches = list(object({<br/>        subnet  = string<br/>        zone_id = string<br/>      }))<br/>    })<br/>    prod = list(object({<br/>      cidr_block = string<br/>      vswitches = list(object({<br/>        subnet  = string<br/>        zone_id = string<br/>      }))<br/>    }))<br/>    dev = list(object({<br/>      cidr_block = string<br/>      vswitches = list(object({<br/>        subnet  = string<br/>        zone_id = string<br/>      }))<br/>    }))<br/>    prod_inner = optional(list(object({<br/>      cidr_block = string<br/>      vswitches = list(object({<br/>        subnet  = string<br/>        zone_id = string<br/>      }))<br/>    })), [])<br/>    dev_inner = optional(list(object({<br/>      cidr_block = string<br/>      vswitches = list(object({<br/>        subnet  = string<br/>        zone_id = string<br/>      }))<br/>    })), [])<br/>  })</pre> | <pre>{<br/>  "dev": [],<br/>  "dmz": {<br/>    "cidr_block": null,<br/>    "vswitches": []<br/>  },<br/>  "prod": []<br/>}</pre> | no |
 
 ## Outputs
 
